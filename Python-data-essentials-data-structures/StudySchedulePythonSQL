@@ -1,0 +1,26 @@
+## 📅 Applied AI Course Schedule (April 2025)
+
+#PYTHON
+| Date           | Module                                     | Chapter                        | Topic                                                                                           |
+|----------------|--------------------------------------------|--------------------------------|-------------------------------------------------------------------------------------------------|
+| 2025-04-15     | Python for Data Science                    | —                              | Keywords and identifiers, comments, indentation and statements, Variables and data types        |
+| 2025-04-15     | Python for Data Science                    | —                              | Standard Input and Output, Operators, Control flow: if else                                     |
+| 2025-04-16     | Python for Data Science                    | —                              | Control flow: while loop, Control flow: for loop                                                |
+| 2025-04-16     | Python for Data Science                    | —                              | Control flow: break and continue, **Revision: Python Basics**                                   |
+| 2025-04-17     | Module 1: Fundamentals of Programming      | Structures                     | Lists                                                                                           |
+| 2025-04-17     | Module 1: Fundamentals of Programming      | Structures                     | Tuples part 1, Tuples part 2, Data Sets, Dictionary                                             |
+| 2025-04-18     | Module 1: Fundamentals of Programming      | Structures                     | Strings, **Revision: Data Structures**                                                          |
+| 2025-04-21     | Python for Data Science – Data Structures  | Functions                      | Introduction, Types of functions, Function arguments, Recursive functions                       |
+| 2025-04-22     | Python for Data Science – Data Structures  | Functions                      | Lambda functions, Modules, Packages, File Handling                                              |
+| 2025-04-23     | Python for Data Science – Data Structures  | Functions                      | Exception Handling, Debugging Python, **Revision: Functions**                                   |
+
+#SQL
+| Date           | Module                                     | Chapter                        | Topic                                                                                           |
+|----------------|--------------------------------------------|--------------------------------|-------------------------------------------------------------------------------------------------|
+| 2025-04-24     | Module 1: Fundamentals of Programming      | SQL                            | Introduction to Databases, Why SQL?                                                             |
+| 2025-04-24     | Module 1: Fundamentals of Programming      | SQL                            | Execution of an SQL statement, IMDB dataset, Installing MySQL, Load IMDB data, USE, DESCRIBE, SHOW TABLES, SELECT |
+| 2025-04-25     | Module 1: Fundamentals of Programming      | SQL                            | LIMIT, OFFSET, ORDER BY, DISTINCT, WHERE                                                       |
+| 2025-04-26     | Module 1: Fundamentals of Programming      | SQL                            | Comparison operators, NULL, Logical Operators, Aggregate Functions: COUNT, MIN, MAX, AVG, SUM   |
+| 2025-04-27     | Module 1: Fundamentals of Programming      | SQL                            | GROUP BY, HAVING, ORDER BY keywords, Join and Natural Join, Inner, Left, Right and Outer joins |
+| 2025-04-28     | Module 1: Fundamentals of Programming      | SQL                            | Sub Queries/Nested Queries/Inner Queries, DML: INSERT, UPDATE, DELETE, DDL: CREATE TABLE, ALTER: ADD, MODIFY, DROP, DDL: DROP TABLE, TRUNCATE, DELETE, Data Control Language: GRANT, REVOKE |
+
