@@ -1,3 +1,34 @@
+## 📅 Applied AI Course Schedule (April 2025)
+
+### 🐍 PYTHON
+
+| Day            | Module                                     | Chapter                        | Topic                                                                                           |
+|----------------|--------------------------------------------|--------------------------------|-------------------------------------------------------------------------------------------------|
+| Day 1          | Python for Data Science                    | —                              | Keywords and identifiers, comments, indentation and statements, Variables and data types        |
+| Day 1          | Python for Data Science                    | —                              | Standard Input and Output, Operators, Control flow: if else                                     |
+| Day 2          | Python for Data Science                    | —                              | Control flow: while loop, Control flow: for loop                                                |
+| Day 2          | Python for Data Science                    | —                              | Control flow: break and continue, **Revision: Python Basics**                                   |
+| Day 3          | Module 1: Fundamentals of Programming      | Structures                     | Lists                                                                                           |
+| Day 3          | Module 1: Fundamentals of Programming      | Structures                     | Tuples part 1, Tuples part 2, Data Sets, Dictionary                                             |
+| Day 4          | Module 1: Fundamentals of Programming      | Structures                     | Strings, **Revision: Data Structures**                                                          |
+| Day 5          | Python for Data Science – Data Structures  | Functions                      | Introduction, Types of functions, Function arguments, Recursive functions                       |
+| Day 6          | Python for Data Science – Data Structures  | Functions                      | Lambda functions, Modules, Packages, File Handling                                              |
+| Day 7          | Python for Data Science – Data Structures  | Functions                      | Exception Handling, Debugging Python, **Revision: Functions**                                   |
+
+### 🗄️ SQL
+
+| Day            | Module                                     | Chapter                        | Topic                                                                                                                        |
+|----------------|--------------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| Day 8          | Module 1: Fundamentals of Programming      | SQL                            | Introduction to Databases, Why SQL?                                                                                          |
+| Day 8          | Module 1: Fundamentals of Programming      | SQL                            | Execution of an SQL statement, IMDB dataset, Installing MySQL, Load IMDB data, USE, DESCRIBE, SHOW TABLES, SELECT            |
+| Day 9          | Module 1: Fundamentals of Programming      | SQL                            | LIMIT, OFFSET, ORDER BY, DISTINCT, WHERE                                                                                     |
+| Day 10         | Module 1: Fundamentals of Programming      | SQL                            | Comparison operators, NULL, Logical Operators, Aggregate Functions: COUNT, MIN, MAX, AVG, SUM                                |
+| Day 11         | Module 1: Fundamentals of Programming      | SQL                            | GROUP BY, HAVING, ORDER BY keywords, Join and Natural Join, Inner, Left, Right and Outer joins                               |
+| Day 12         | Module 1: Fundamentals of Programming      | SQL                            | Sub Queries/Nested Queries/Inner Queries, DML: INSERT, UPDATE, DELETE, DDL: CREATE TABLE, ALTER: ADD, MODIFY, DROP,          |
+|                |                                            |                                | DDL: DROP TABLE, TRUNCATE, DELETE, Data Control Language: GRANT, REVOKE                                                      |
+
+
+
 # Python Data Essentials: Python Introduction
 
 ## Course Overview
@@ -643,6 +674,7 @@ There are some built-in data structures in Python:
 - Lists
 - Tuples
 - Sets
+- Dictionary 
 
 ## Lists
 ## What Are Lists in Python
@@ -966,6 +998,154 @@ email_list = ['john@example.com', 'jane@example.com', 'doe@example.com']
 email_set = set(email_list)
 print(email_set)  # Output: {'john@example.com', 'jane@example.com', 'doe@example.com'}
 ```
+
+Certainly! Here is a **Python Dictionary** section for your README, following the same explanatory and hands-on style as your Sets section:
+
+---
+
+## Dictionaries  
+## What Are Dictionaries
+
+Hello everybody. Welcome to this class. In this class, we are going to cover dictionaries, a powerful and versatile data structure in Python. We’ll explore how to create dictionaries, how to use them in your Python programs, and discuss their unique characteristics. By the end, you’ll know how to store and retrieve data efficiently using dictionaries. So let’s get started!
+
+## Creating Dictionaries
+
+A **dictionary** allows you to store data in key-value pairs. Each key must be unique, and each key is associated with a value.
+
+### Creating a Dictionary
+
+Here’s how you can create a dictionary:
+
+```python
+# Creating a dictionary of car details
+car = {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+print(car)         # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+print(type(car))   # Output: 
+```
+
+#### Dictionary with Mixed Types
+
+You can store mixed data types as values:
+
+```python
+person = {'name': 'Alice', 'age': 30, 'is_student': False, 'skills': ['Python', 'Data Analysis']}
+print(person)
+# Output: {'name': 'Alice', 'age': 30, 'is_student': False, 'skills': ['Python', 'Data Analysis']}
+```
+
+#### Creating an Empty Dictionary
+
+To create an empty dictionary:
+
+```python
+empty_dict = {}
+print(empty_dict)       # Output: {}
+print(type(empty_dict)) # Output: 
+```
+
+Or using the `dict()` constructor:
+
+```python
+another_dict = dict()
+print(another_dict)     # Output: {}
+```
+
+## Accessing Elements in Dictionaries
+
+Access values by their keys:
+
+```python
+print(car['brand'])     # Output: Ford
+print(person['skills']) # Output: ['Python', 'Data Analysis']
+```
+
+Or use the `get()` method:
+
+```python
+print(car.get('model')) # Output: Mustang
+```
+
+## Adding and Updating Items
+
+Add a new key-value pair or update an existing one:
+
+```python
+car['color'] = 'red'    # Add new key-value pair
+car['year'] = 2020      # Update existing value
+print(car)              # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020, 'color': 'red'}
+```
+
+Or use the `update()` method:
+
+```python
+car.update({'engine': 'V8'})
+print(car)              # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020, 'color': 'red', 'engine': 'V8'}
+```
+
+## Removing Items
+
+You can remove items in several ways:
+
+```python
+car.pop('model')        # Removes the key 'model'
+car.popitem()           # Removes the last inserted key-value pair
+del car['brand']        # Removes the key 'brand'
+car.clear()             # Empties the dictionary
+```
+
+## Iterating Through a Dictionary
+
+You can loop through keys, values, or both:
+
+```python
+for key in person:
+    print(key, person[key])
+
+for value in person.values():
+    print(value)
+
+for key, value in person.items():
+    print(f"{key}: {value}")
+```
+
+## Checking for Keys
+
+Check if a key exists in the dictionary:
+
+```python
+if 'age' in person:
+    print("Yes, 'age' is a key in the person dictionary.")
+```
+
+## Characteristics of Dictionaries
+
+- **Mutable:** You can add, update, or remove items.
+- **Unordered (before Python 3.7):** The order of items is not guaranteed.  
+  **Ordered (Python 3.7+):** Items maintain insertion order.
+- **No Duplicate Keys:** Each key must be unique; assigning a value to an existing key overwrites the previous value.
+- **Keys Must Be Immutable:** Keys can be strings, numbers, or tuples, but not lists or other dictionaries.
+
+## Real-World Use Cases of Dictionaries
+
+Dictionaries are ideal for representing structured data, such as records from a database, configuration settings, or mapping unique IDs to values. For example, you can use a dictionary to store and quickly access user profiles by username:
+
+```python
+users = {
+    'alice': {'email': 'alice@example.com', 'age': 30},
+    'bob': {'email': 'bob@example.com', 'age': 25}
+}
+print(users['alice']['email'])  # Output: alice@example.com
+```
+
+Dictionaries are also commonly used for counting occurrences, grouping data, and implementing caches.
+
+---
+
+**Summary:**  
+Dictionaries are a core data structure in Python, allowing you to associate unique keys with values for fast and flexible data access.
+Mastering dictionaries will help you write efficient and readable Python code for a wide range of data analysis tasks.
+
+---
 ## Summary
 So we have reached the end of the module, and we have covered and learned a lot. Let us summarize our learnings:
 
@@ -992,5 +1172,17 @@ Key Points
 #### Allows checking element existence with in operator.
 #### Immutable after creation.
 #### Unordered and does not allow duplicates.
+
+### Dictionaries:
+#### Store data as key-value pairs, with each key mapping to a specific value.
+#### Keys must be unique and immutable (e.g., strings, numbers, tuples); values can be of any data type and can be duplicated.
+#### Support mixed data types for values, including lists, other dictionaries, and more.
+#### Are ordered as of Python 3.7+ (items maintain insertion order); unordered in earlier versions.
+#### Changeable (mutable): You can add, update, or remove items after creation.
+#### Do not allow duplicate keys—if a key is repeated, the last value assigned to it is retained.
+#### Do not support indexing by position; elements are accessed by key.
+#### Can be created empty or populated, using curly braces `{}` or the `dict()` constructor.
+#### Commonly used for fast lookups, efficient data organization, and mapping relationships.
+
 
 ---
