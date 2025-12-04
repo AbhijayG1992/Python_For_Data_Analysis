@@ -67,32 +67,32 @@ Welcome to **Python for Data Analysis** - a comprehensive, hands-on learning rep
 
 ### 📊 Data Structures
 - Lists, Tuples & Sets
-- Dictionaries & Advanced Collections
-- String Manipulation & Regex
+- Dictionaries & Nested Structures
+- String Manipulation & Methods
 - Data Structure Operations
-- Performance Optimization
+- Practical Applications
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 🗄️ SQL Mastery
-- Database Fundamentals
-- CRUD Operations (SELECT, INSERT, UPDATE, DELETE)
-- Joins & Subqueries
-- Aggregate Functions & GROUP BY
-- DDL & DML Commands
+### 🎯 Object-Oriented Programming
+- Classes & Objects
+- Inheritance & Polymorphism
+- Method Overriding
+- Constructor Methods
+- Real-world OOP Projects
 
 </td>
 <td width="50%">
 
-### 🔧 Tools & Environment
-- Jupyter Notebook Setup
-- Python IDEs (PyCharm, VS Code)
-- Package Management (pip, conda)
-- Version Control Best Practices
-- Debugging Techniques
+### � Regex & Text Processing
+- Pattern Matching & Validation
+- Data Extraction & Parsing
+- Text Cleaning & Sanitization
+- Advanced Regex Techniques
+- Web APIs & JSON Handling
 
 </td>
 </tr>
@@ -108,49 +108,82 @@ Welcome to **Python for Data Analysis** - a comprehensive, hands-on learning rep
 Python_For_Data_Analysis/
 │
 ├── 📁 Python-data-essentials-data-structures/
-│   ├── 📄 Python Part 2
-│   ├── 📄 Python Strings and Regex
-│   └── 📄 Readme for Python Data Essentials - Python Introduction.md
+│   ├── 📄 Python-Data-Science-Introduction.md
+│   ├── 📄 Python-Fundamentals-Complete-Guide.md
+│   └── 📄 Python-Regex-Complete-Guide.md
 │
 └── 📄 README.md (You are here!)
 ```
 
 ### 🎓 Main Modules
 
-#### 1️⃣ **Python Data Essentials - Introduction**
-Comprehensive guide covering Python basics, installation, IDEs, and fundamental concepts.
+#### 1️⃣ **Python Data Science - Introduction**
+Comprehensive guide covering Python basics, installation, IDEs, and fundamental concepts for data science.
 
-[📖 View Full Introduction Guide](./Python-data-essentials-data-structures/Readme%20for%20Python%20Data%20Essentials%20-%20Python%20Introduction.md)
+[📖 View Python Data Science Introduction](./Python-data-essentials-data-structures/Python-Data-Science-Introduction.md)
 
 **Topics Covered:**
 - Python & Data Science Overview
-- Installing Python (Windows/Mac)
-- Jupyter Notebook Setup
+- Installing Python (Windows/Mac/Linux)
+- Jupyter Notebook Setup & Usage
+- Python IDEs (PyCharm, VS Code, Jupyter)
 - Identifiers, Literals & Expressions
 - Operators (Arithmetic, Comparison, Logical)
 - Python Packages & PyPI
+- Data Structures (Lists, Tuples, Sets, Dictionaries)
 
-#### 2️⃣ **Data Structures Deep Dive**
-Master Python's built-in data structures with practical examples.
+#### 2️⃣ **Python Fundamentals - Complete Guide**
+Detailed course notes covering Python 3 fundamentals with hands-on projects and practical examples.
 
-**Topics Covered:**
-- **Lists**: Creation, indexing, slicing, methods, and mutability
-- **Tuples**: Immutable sequences and use cases
-- **Sets**: Unique collections and set operations
-- **Dictionaries**: Key-value pairs and advanced operations
-- **Strings**: Manipulation, formatting, and regex patterns
-
-#### 3️⃣ **SQL for Data Analysis**
-Learn SQL from scratch with the IMDB dataset.
+[📖 View Python Fundamentals Guide](./Python-data-essentials-data-structures/Python-Fundamentals-Complete-Guide.md)
 
 **Topics Covered:**
-- Database concepts and MySQL installation
-- SELECT, WHERE, ORDER BY, LIMIT
-- Aggregate functions (COUNT, SUM, AVG, MIN, MAX)
-- GROUP BY and HAVING clauses
-- Joins (INNER, LEFT, RIGHT, OUTER)
-- Subqueries and nested queries
-- DDL & DML operations
+- Variables, Data Types & Type Conversion
+- Strings, Input/Output Operations
+- Conditionals (if/elif/else) & Imports
+- Lists, Loops & the range() Function
+- Dictionaries, JSON & Web APIs
+- Functions & Variable Scope
+- Classes, Objects & OOP Concepts
+- File Handling & Exception Management
+- Package Management with pip & Virtual Environments
+
+**Hands-on Projects:**
+- Tax Calculator
+- Age Calculator
+- Rock, Paper, Scissors Game
+- Loan Calculator
+- Weather Reader (API Integration)
+- File Organizer
+
+#### 3️⃣ **Regular Expressions (Regex) - Complete Guide**
+Master regular expressions in Python for pattern matching, data validation, and text processing.
+
+[📖 View Regex Complete Guide](./Python-data-essentials-data-structures/Python-Regex-Complete-Guide.md)
+
+**Topics Covered:**
+- Regular Expression Basics & Special Characters
+- Character Classes & Shorthand Notation
+- Quantifiers & Repetition Patterns
+- Python `re` Module Functions (search, match, findall, sub, split)
+- Match Objects & Capturing Groups
+- Regex Flags (IGNORECASE, MULTILINE, DOTALL)
+- Parsing & Extracting Data from Files
+- Data Validation & Input Sanitization
+- Lookahead & Lookbehind Assertions
+- Greedy vs Non-Greedy Matching
+- Text Cleaning & Transformation
+- Redacting Sensitive Information
+- Performance Optimization Tips
+
+**Practical Applications:**
+- Email & Phone Number Validation
+- URL Pattern Matching
+- Product Code Extraction
+- HTML Tag Parsing
+- Credit Card Redaction
+- Log File Analysis
+- Data Cleaning for NLP
 
 ---
 
@@ -160,27 +193,54 @@ Learn SQL from scratch with the IMDB dataset.
 graph LR
     A[Python Basics] --> B[Data Structures]
     B --> C[Functions & Modules]
-    C --> D[File Handling]
-    D --> E[SQL Fundamentals]
-    E --> F[Advanced SQL]
+    C --> D[OOP Concepts]
+    D --> E[File Handling]
+    E --> F[Regular Expressions]
     F --> G[Data Analysis Ready!]
     
     style A fill:#3776AB,color:#fff
     style B fill:#3776AB,color:#fff
     style C fill:#3776AB,color:#fff
     style D fill:#3776AB,color:#fff
-    style E fill:#4479A1,color:#fff
-    style F fill:#4479A1,color:#fff
+    style E fill:#3776AB,color:#fff
+    style F fill:#F37626,color:#fff
     style G fill:#2ecc71,color:#fff
 ```
 
 ### Recommended Study Sequence
 
-1. **Week 1-2**: Python Fundamentals (Variables, Operators, Control Flow)
-2. **Week 3**: Data Structures (Lists, Tuples, Sets, Dictionaries)
-3. **Week 4**: Functions, Modules & Packages
-4. **Week 5**: File Handling & Exception Handling
-5. **Week 6-7**: SQL Fundamentals & Advanced Queries
+1. **Week 1**: Python Basics & Data Science Introduction
+   - Python installation and setup
+   - Variables, data types, and operators
+   - Basic input/output operations
+
+2. **Week 2**: Control Flow & Data Structures
+   - Conditionals (if/elif/else)
+   - Loops (for, while)
+   - Lists, tuples, sets, and dictionaries
+
+3. **Week 3**: Functions & Modules
+   - Defining and calling functions
+   - Parameters and return values
+   - Importing and using modules
+   - Package management with pip
+
+4. **Week 4**: Object-Oriented Programming
+   - Classes and objects
+   - Inheritance and polymorphism
+   - Building practical OOP projects
+
+5. **Week 5**: File Handling & APIs
+   - Reading and writing files
+   - Exception handling
+   - Working with JSON
+   - Making web requests to APIs
+
+6. **Week 6**: Regular Expressions Mastery
+   - Regex patterns and syntax
+   - Data validation and sanitization
+   - Text processing and cleaning
+   - Advanced pattern matching techniques
 
 ---
 
@@ -237,20 +297,7 @@ pip install jupyter
 # Download from: https://www.anaconda.com/products/distribution
 ```
 
-#### 3. Install MySQL (for SQL modules)
-
-```bash
-# macOS
-brew install mysql
-
-# Windows - Download from:
-# https://dev.mysql.com/downloads/installer/
-
-# Linux
-sudo apt install mysql-server
-```
-
-#### 4. Clone This Repository
+#### 3. Clone This Repository
 
 ```bash
 git clone https://github.com/AbhijayG1992/Python_For_Data_Analysis.git
@@ -298,27 +345,47 @@ pip install pandas numpy matplotlib
 
 ## 📅 Course Schedule
 
-### 🐍 Python Module (Days 1-7)
+### 🐍 Python Fundamentals (Weeks 1-3)
 
-| Day | Topics | Duration |
-|-----|--------|----------|
-| **Day 1** | Keywords, Identifiers, Variables, Data Types, I/O, Operators, if-else | 4-6 hours |
-| **Day 2** | Loops (while, for), break, continue, Python Basics Revision | 4-6 hours |
-| **Day 3** | Lists, Tuples, Sets, Dictionaries | 4-6 hours |
-| **Day 4** | Strings, Data Structures Revision | 4-6 hours |
-| **Day 5** | Functions, Function Arguments, Recursion | 4-6 hours |
-| **Day 6** | Lambda Functions, Modules, Packages, File Handling | 4-6 hours |
-| **Day 7** | Exception Handling, Debugging, Functions Revision | 4-6 hours |
+| Week | Module | Topics | Duration |
+|------|--------|--------|----------|
+| **Week 1** | Getting Started | Python installation, IDEs, Variables, Data types, Operators | 8-10 hours |
+| **Week 1** | Strings & I/O | String manipulation, Input/output, Type conversion | 4-6 hours |
+| **Week 2** | Control Flow | Conditionals (if/elif/else), Logical operators, Imports | 6-8 hours |
+| **Week 2** | Lists & Loops | Lists, For loops, range() function, List methods | 6-8 hours |
+| **Week 3** | Dictionaries & Data | Dictionaries, JSON, Web APIs, requests library | 6-8 hours |
+| **Week 3** | Functions | Function definition, Parameters, Return values, Scope | 6-8 hours |
 
-### 🗄️ SQL Module (Days 8-12)
+### 🎯 Advanced Python (Weeks 4-5)
 
-| Day | Topics | Duration |
-|-----|--------|----------|
-| **Day 8** | Database Intro, MySQL Installation, IMDB Dataset, SELECT, DESCRIBE | 4-6 hours |
-| **Day 9** | LIMIT, OFFSET, ORDER BY, DISTINCT, WHERE | 4-6 hours |
-| **Day 10** | Comparison Operators, NULL, Logical Operators, Aggregate Functions | 4-6 hours |
-| **Day 11** | GROUP BY, HAVING, Joins (INNER, LEFT, RIGHT, OUTER) | 4-6 hours |
-| **Day 12** | Subqueries, DML (INSERT, UPDATE, DELETE), DDL (CREATE, ALTER, DROP) | 4-6 hours |
+| Week | Module | Topics | Duration |
+|------|--------|--------|----------|
+| **Week 4** | OOP Basics | Classes, Objects, __init__ method, self parameter | 6-8 hours |
+| **Week 4** | OOP Advanced | Inheritance, Method overriding, super() function | 6-8 hours |
+| **Week 5** | File Handling | Reading/writing files, File paths, with statement | 4-6 hours |
+| **Week 5** | Exceptions | try/except blocks, Exception handling, finally clause | 4-6 hours |
+| **Week 5** | File System | os module, shutil, Directory manipulation | 4-6 hours |
+
+### � Regular Expressions (Week 6)
+
+| Week | Module | Topics | Duration |
+|------|--------|--------|----------|
+| **Week 6** | Regex Basics | Literal characters, Special characters, Character classes | 4-6 hours |
+| **Week 6** | Regex Patterns | Quantifiers, Anchors, Groups, Alternation | 4-6 hours |
+| **Week 6** | Python re Module | search(), match(), findall(), sub(), split() | 4-6 hours |
+| **Week 6** | Advanced Regex | Lookahead/Lookbehind, Greedy vs Non-greedy, Optimization | 4-6 hours |
+| **Week 6** | Practical Applications | Data validation, Text cleaning, Pattern extraction | 4-6 hours |
+
+### 📊 Hands-on Projects Timeline
+
+| Project | Week | Skills Applied |
+|---------|------|----------------|
+| Tax Calculator | Week 1 | Variables, Operators, Basic I/O |
+| Age Calculator | Week 1 | Type conversion, Integer division, Modulus |
+| Rock, Paper, Scissors | Week 2 | Conditionals, random module, Logical operators |
+| Loan Calculator | Week 2 | Loops, range(), break statement, f-strings |
+| Weather Reader | Week 3 | APIs, requests library, JSON, Dictionaries |
+| File Organizer | Week 5 | File handling, os module, shutil, Loops |
 
 ---
 
@@ -327,19 +394,23 @@ pip install pandas numpy matplotlib
 ### 📚 Official Documentation
 - [Python Official Documentation](https://docs.python.org/3/)
 - [Jupyter Notebook Documentation](https://jupyter-notebook.readthedocs.io/)
-- [MySQL Documentation](https://dev.mysql.com/doc/)
+- [Python re Module Documentation](https://docs.python.org/3/library/re.html)
+- [Python Requests Library](https://requests.readthedocs.io/)
 
 ### 🎓 Additional Learning Materials
 - [Python Package Index (PyPI)](https://pypi.org/)
 - [Real Python Tutorials](https://realpython.com/)
 - [W3Schools Python](https://www.w3schools.com/python/)
-- [SQLZoo](https://sqlzoo.net/)
+- [Regex101 - Online Regex Tester](https://regex101.com/)
+- [RegexOne - Interactive Regex Tutorial](https://regexone.com/)
+- [Python OOP Tutorial](https://realpython.com/python3-object-oriented-programming/)
 
 ### 🔧 Recommended Tools
 - **IDEs**: PyCharm, Visual Studio Code, Jupyter Notebook
-- **Package Managers**: pip, conda
+- **Package Managers**: pip, conda (Anaconda)
 - **Version Control**: Git, GitHub
-- **Database Tools**: MySQL Workbench, DBeaver
+- **API Testing**: Postman, HTTPie
+- **Regex Tools**: Regex101, RegExr, Pythex
 
 ---
 
