@@ -1,3 +1,30 @@
+## 📅 Python Fundamentals Course Schedule
+
+### 🐍 PYTHON FUNDAMENTALS
+
+| Day            | Module                                     | Chapter                        | Topic                                                                                           |
+|----------------|--------------------------------------------|--------------------------------|-------------------------------------------------------------------------------------------------|
+| Day 1          | Getting Started                            | Data Types & Installation      | Why Python?, Running Python Code, Variables and Basic Data Types                               |
+| Day 1          | Getting Started                            | Data Types & Installation      | Arithmetic Operators, Installation and Setup, Project: Tax Calculator                          |
+| Day 2          | Strings, Input/Output                      | More Data Types                | Strings, Input and Output, Type Conversion                                                      |
+| Day 2          | Strings, Input/Output                      | More Data Types                | Project: Age Calculator, **Revision: Basic Data Types**                                         |
+| Day 3          | Conditionals and Imports                   | Control Flow                   | Conditionals (if, elif, else), Comparators and Booleans                                         |
+| Day 3          | Conditionals and Imports                   | Control Flow                   | Logical Operators, Importing Modules, Project: Rock, Paper, Scissors                            |
+| Day 4          | Lists and Loops                            | Data Structures                | Lists, for Loops, The range() function                                                          |
+| Day 4          | Lists and Loops                            | Data Structures                | Project: Loan Calculator, **Revision: Lists and Loops**                                         |
+| Day 5          | Dictionaries, JSON, and pip                | Advanced Data Structures       | Dictionaries, Nested Data Structures, JSON                                                      |
+| Day 5          | Dictionaries, JSON, and pip                | Advanced Data Structures       | Web Requests and APIs, Package Management with pip, Virtual Environments                        |
+| Day 6          | Dictionaries, JSON, and pip                | Advanced Data Structures       | Project: Weather Reader, **Revision: Dictionaries and APIs**                                    |
+| Day 7          | Functions                                  | Code Organization              | Introduction to Functions, Defining and Calling Functions, Variable Scope                       |
+| Day 7          | Functions                                  | Code Organization              | Organizing with main function, **Revision: Functions**                                          |
+| Day 8          | Classes and Objects                        | Object-Oriented Programming    | Introduction to OOP, Creating a Class, Class Inheritance                                        |
+| Day 8          | Classes and Objects                        | Object-Oriented Programming    | Method Overriding, **Revision: OOP Concepts**                                                   |
+| Day 9          | Working with Files                         | File Handling                  | Exception Handling, Reading and Writing Files, File Paths                                       |
+| Day 9          | Working with Files                         | File Handling                  | File and Directory Manipulation, Project: File Organizer                                        |
+| Day 10         | Final Project                              | Integration                    | Comprehensive Project combining all concepts, **Course Review and Next Steps**                  |
+
+---
+
 Here are detailed notes formatted for a `README.md` file, based on the provided course transcript.
 
 ````markdown

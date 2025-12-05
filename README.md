@@ -108,82 +108,104 @@ Welcome to **Python for Data Analysis** - a comprehensive, hands-on learning rep
 Python_For_Data_Analysis/
 │
 ├── 📁 Python-data-essentials-data-structures/
-│   ├── 📄 Python-Data-Science-Introduction.md
-│   ├── 📄 Python-Fundamentals-Complete-Guide.md
-│   └── 📄 Python-Regex-Complete-Guide.md
+│   ├── 📄 Python-Complete-Guide-Days-1-7.md       ⭐ NEW! Consolidated Python Guide
+│   ├── 📄 Regex-Complete-Guide-Advanced.md        ⭐ NEW! Advanced Regex Guide  
+│   ├── 📄 SQL-Complete-Guide.md                   📊 SQL for Data Analysis
+│   │
+│   └── 📁 archive/ (Legacy files for reference)
+│       ├── 📄 Python-Data-Science-Introduction.md
+│       ├── 📄 Python-Fundamentals-Complete-Guide.md
+│       └── 📄 Python-Regex-Complete-Guide.md
 │
 └── 📄 README.md (You are here!)
 ```
 
-### 🎓 Main Modules
+### 🎓 Main Learning Modules
 
-#### 1️⃣ **Python Data Science - Introduction**
-Comprehensive guide covering Python basics, installation, IDEs, and fundamental concepts for data science.
+#### 1️⃣ **Python Complete Guide (Days 1-7)** ⭐ NEW!
+Your comprehensive journey through Python fundamentals, from basics to object-oriented programming.
 
-[📖 View Python Data Science Introduction](./Python-data-essentials-data-structures/Python-Data-Science-Introduction.md)
+[📖 View Python Complete Guide](./Python-data-essentials-data-structures/Python-Complete-Guide-Days-1-7.md)
 
-**Topics Covered:**
-- Python & Data Science Overview
-- Installing Python (Windows/Mac/Linux)
-- Jupyter Notebook Setup & Usage
-- Python IDEs (PyCharm, VS Code, Jupyter)
-- Identifiers, Literals & Expressions
-- Operators (Arithmetic, Comparison, Logical)
-- Python Packages & PyPI
-- Data Structures (Lists, Tuples, Sets, Dictionaries)
+**Day-by-Day Breakdown:**
 
-#### 2️⃣ **Python Fundamentals - Complete Guide**
-Detailed course notes covering Python 3 fundamentals with hands-on projects and practical examples.
+| Day | Topics Covered | Duration |
+|-----|----------------|----------|
+| **Day 1** | Keywords, Identifiers, Variables, Data Types, Operators, if-else | 6-8 hours |
+| **Day 2** | While loops, For loops, break/continue, Lists, range() | 6-8 hours |
+| **Day 3** | Tuples, Sets, Dictionaries, Strings, String methods | 6-8 hours |
+| **Day 4** | Nested data structures, Complex data organization | 4-6 hours |
+| **Day 5** | Functions, Arguments, Recursion, Variable scope | 6-8 hours |
+| **Day 6** | Lambda functions, Modules, Packages, File handling | 6-8 hours |
+| **Day 7** | Exception handling, Debugging, OOP basics, Classes | 6-8 hours |
 
-[📖 View Python Fundamentals Guide](./Python-data-essentials-data-structures/Python-Fundamentals-Complete-Guide.md)
-
-**Topics Covered:**
-- Variables, Data Types & Type Conversion
-- Strings, Input/Output Operations
-- Conditionals (if/elif/else) & Imports
-- Lists, Loops & the range() Function
-- Dictionaries, JSON & Web APIs
-- Functions & Variable Scope
-- Classes, Objects & OOP Concepts
-- File Handling & Exception Management
-- Package Management with pip & Virtual Environments
-
-**Hands-on Projects:**
+**Hands-on Projects Included:**
 - Tax Calculator
-- Age Calculator
+- Age Calculator  
 - Rock, Paper, Scissors Game
 - Loan Calculator
-- Weather Reader (API Integration)
-- File Organizer
 
-#### 3️⃣ **Regular Expressions (Regex) - Complete Guide**
-Master regular expressions in Python for pattern matching, data validation, and text processing.
+---
 
-[📖 View Regex Complete Guide](./Python-data-essentials-data-structures/Python-Regex-Complete-Guide.md)
+#### 2️⃣ **Regular Expressions - Advanced Guide** ⭐ NEW!
+Master pattern matching, data validation, and text processing with Python's regex capabilities.
 
-**Topics Covered:**
-- Regular Expression Basics & Special Characters
-- Character Classes & Shorthand Notation
-- Quantifiers & Repetition Patterns
-- Python `re` Module Functions (search, match, findall, sub, split)
-- Match Objects & Capturing Groups
-- Regex Flags (IGNORECASE, MULTILINE, DOTALL)
-- Parsing & Extracting Data from Files
-- Data Validation & Input Sanitization
-- Lookahead & Lookbehind Assertions
-- Greedy vs Non-Greedy Matching
-- Text Cleaning & Transformation
-- Redacting Sensitive Information
-- Performance Optimization Tips
+[📖 View Regex Advanced Guide](./Python-data-essentials-data-structures/Regex-Complete-Guide-Advanced.md)
+
+**Day-by-Day Breakdown:**
+
+| Day | Topics Covered | Duration |
+|-----|----------------|----------|
+| **Day 1** | Regex basics, Literal characters, Special characters | 3-4 hours |
+| **Day 2** | Quantifiers, Repetition patterns, Greedy vs non-greedy | 3-4 hours |
+| **Day 3** | Python re module: search(), match(), findall(), sub() | 4-5 hours |
+| **Day 4** | Match objects, Regex flags, Capturing groups | 4-5 hours |
+| **Day 5** | Data extraction, Parsing files, Pattern extraction | 4-5 hours |
+| **Day 6** | Data validation, Input sanitization, Security | 4-5 hours |
+| **Day 7** | Lookahead/Lookbehind, Text cleaning, Transformation | 4-5 hours |
+| **Day 8** | Performance optimization, Debugging, Best practices | 3-4 hours |
 
 **Practical Applications:**
-- Email & Phone Number Validation
-- URL Pattern Matching
-- Product Code Extraction
-- HTML Tag Parsing
-- Credit Card Redaction
-- Log File Analysis
-- Data Cleaning for NLP
+- Email & Phone validation
+- URL pattern matching
+- Log file parsing
+- Data sanitization
+- Password strength checking
+- Credit card redaction
+
+---
+
+#### 3️⃣ **SQL for Data Analysis - Complete Guide (Days 8-12)**
+Comprehensive SQL guide from installation to advanced queries, perfect for data analysis.
+
+[📖 View SQL Complete Guide](./Python-data-essentials-data-structures/SQL-Complete-Guide.md)
+
+**Day-by-Day Breakdown:**
+
+| Day | Topics Covered | Duration |
+|-----|----------------|----------|
+| **Day 8** | Database intro, MySQL installation, Basic commands (SELECT, USE, DESCRIBE) | 6-8 hours |
+| **Day 9** | LIMIT, OFFSET, ORDER BY, DISTINCT, WHERE, Pattern matching | 6-8 hours |
+| **Day 10** | Comparison operators, NULL handling, Logical operators, Aggregate functions | 6-8 hours |
+| **Day 11** | GROUP BY, HAVING, INNER/LEFT/RIGHT/CROSS/SELF JOINs | 6-8 hours |
+| **Day 12** | Subqueries, DML (INSERT/UPDATE/DELETE), DDL (CREATE/ALTER/DROP), DCL | 6-8 hours |
+
+**Topics Covered:**
+- Database fundamentals & DBMS concepts
+- MySQL installation (Windows/macOS/Linux)
+- IMDB dataset setup and queries
+- Data filtering, sorting, and aggregation
+- Multi-table joins and relationships
+- Subqueries and nested queries
+- Data manipulation (INSERT, UPDATE, DELETE)
+- Database schema management
+- Access control (GRANT, REVOKE)
+
+**Practical Examples:**
+- Movie database queries
+- Data aggregation and reporting
+- Complex multi-table joins
+- Database administration tasks
 
 ---
 
@@ -207,40 +229,77 @@ graph LR
     style G fill:#2ecc71,color:#fff
 ```
 
-### Recommended Study Sequence
+### Recommended Study Sequence (12-Day Intensive Program)
 
-1. **Week 1**: Python Basics & Data Science Introduction
-   - Python installation and setup
-   - Variables, data types, and operators
-   - Basic input/output operations
+#### **Week 1: Python Fundamentals (Days 1-7)**
 
-2. **Week 2**: Control Flow & Data Structures
-   - Conditionals (if/elif/else)
-   - Loops (for, while)
-   - Lists, tuples, sets, and dictionaries
+**Days 1-2: Python Basics & Control Flow**
+- Python installation and setup
+- Variables, data types, and operators
+- Control flow (if-else, loops)
+- Lists and basic operations
+- **Practice**: Tax Calculator, Age Calculator
 
-3. **Week 3**: Functions & Modules
-   - Defining and calling functions
-   - Parameters and return values
-   - Importing and using modules
-   - Package management with pip
+**Days 3-4: Data Structures**
+- Tuples, sets, and dictionaries
+- Strings and string methods
+- Nested data structures
+- **Practice**: Data manipulation exercises
 
-4. **Week 4**: Object-Oriented Programming
-   - Classes and objects
-   - Inheritance and polymorphism
-   - Building practical OOP projects
+**Days 5-6: Functions & Modules**
+- Function definition and arguments
+- Lambda functions and recursion
+- Modules and packages
+- File handling and I/O
+- **Practice**: Loan Calculator
 
-5. **Week 5**: File Handling & APIs
-   - Reading and writing files
-   - Exception handling
-   - Working with JSON
-   - Making web requests to APIs
+**Day 7: Advanced Concepts**
+- Exception handling
+- Debugging techniques
+- Object-oriented programming basics
+- Classes and objects
+- **Practice**: Rock, Paper, Scissors with OOP
 
-6. **Week 6**: Regular Expressions Mastery
-   - Regex patterns and syntax
-   - Data validation and sanitization
-   - Text processing and cleaning
-   - Advanced pattern matching techniques
+#### **Week 2: SQL & Advanced Topics (Days 8-12)**
+
+**Day 8: SQL Fundamentals**
+- Database concepts and MySQL setup
+- Basic SQL commands (SELECT, USE, DESCRIBE)
+- IMDB dataset exploration
+- **Practice**: Simple queries
+
+**Day 9: Data Filtering & Sorting**
+- LIMIT, OFFSET, ORDER BY
+- WHERE clause and pattern matching
+- DISTINCT for unique values
+- **Practice**: Complex filtering queries
+
+**Day 10: Aggregation & Analysis**
+- Comparison and logical operators
+- NULL handling
+- Aggregate functions (COUNT, SUM, AVG, MIN, MAX)
+- **Practice**: Data analysis queries
+
+**Day 11: Joins & Relationships**
+- GROUP BY and HAVING
+- INNER, LEFT, RIGHT, CROSS, SELF JOINs
+- Multi-table queries
+- **Practice**: Complex join operations
+
+**Day 12: Advanced SQL & Regex**
+- Subqueries and nested queries
+- DML operations (INSERT, UPDATE, DELETE)
+- DDL operations (CREATE, ALTER, DROP)
+- **Bonus**: Introduction to Regular Expressions
+- **Practice**: Database management tasks
+
+#### **Optional Advanced Track: Regular Expressions (8 Days)**
+
+For those wanting to master text processing and pattern matching:
+- Days 1-2: Regex basics and quantifiers
+- Days 3-4: Python re module and match objects
+- Days 5-6: Data extraction and validation
+- Days 7-8: Advanced patterns and optimization
 
 ---
 
@@ -343,49 +402,95 @@ pip install pandas numpy matplotlib
 
 ---
 
-## 📅 Course Schedule
+## 📅 Complete Course Schedule
 
-### 🐍 Python Fundamentals (Weeks 1-3)
+### 🐍 Python Fundamentals (Days 1-7)
 
-| Week | Module | Topics | Duration |
-|------|--------|--------|----------|
-| **Week 1** | Getting Started | Python installation, IDEs, Variables, Data types, Operators | 8-10 hours |
-| **Week 1** | Strings & I/O | String manipulation, Input/output, Type conversion | 4-6 hours |
-| **Week 2** | Control Flow | Conditionals (if/elif/else), Logical operators, Imports | 6-8 hours |
-| **Week 2** | Lists & Loops | Lists, For loops, range() function, List methods | 6-8 hours |
-| **Week 3** | Dictionaries & Data | Dictionaries, JSON, Web APIs, requests library | 6-8 hours |
-| **Week 3** | Functions | Function definition, Parameters, Return values, Scope | 6-8 hours |
+| Day | Module | Topics | Key Deliverables | Duration |
+|-----|--------|--------|------------------|----------|
+| **Day 1** | Python Basics | Keywords, Identifiers, Variables, Data Types, Operators, if-else statements | Tax Calculator project | 6-8 hours |
+| **Day 2** | Control Flow & Lists | While loops, For loops, break/continue, Lists, range() function | Age Calculator, List operations | 6-8 hours |
+| **Day 3** | Data Structures I | Tuples, Sets, Dictionaries, String methods | Data structure exercises | 6-8 hours |
+| **Day 4** | Data Structures II | Nested structures, Complex data organization, JSON basics | Nested data manipulation | 4-6 hours |
+| **Day 5** | Functions | Function definition, Arguments, Recursion, Variable scope | Function exercises | 6-8 hours |
+| **Day 6** | Advanced Functions | Lambda functions, Modules, Packages, File handling | Loan Calculator, File I/O | 6-8 hours |
+| **Day 7** | OOP & Error Handling | Exception handling, Debugging, Classes, Objects, Inheritance | Rock-Paper-Scissors (OOP) | 6-8 hours |
 
-### 🎯 Advanced Python (Weeks 4-5)
+**Total: 40-54 hours**
 
-| Week | Module | Topics | Duration |
-|------|--------|--------|----------|
-| **Week 4** | OOP Basics | Classes, Objects, __init__ method, self parameter | 6-8 hours |
-| **Week 4** | OOP Advanced | Inheritance, Method overriding, super() function | 6-8 hours |
-| **Week 5** | File Handling | Reading/writing files, File paths, with statement | 4-6 hours |
-| **Week 5** | Exceptions | try/except blocks, Exception handling, finally clause | 4-6 hours |
-| **Week 5** | File System | os module, shutil, Directory manipulation | 4-6 hours |
+---
 
-### � Regular Expressions (Week 6)
+### 📊 SQL for Data Analysis (Days 8-12)
 
-| Week | Module | Topics | Duration |
-|------|--------|--------|----------|
-| **Week 6** | Regex Basics | Literal characters, Special characters, Character classes | 4-6 hours |
-| **Week 6** | Regex Patterns | Quantifiers, Anchors, Groups, Alternation | 4-6 hours |
-| **Week 6** | Python re Module | search(), match(), findall(), sub(), split() | 4-6 hours |
-| **Week 6** | Advanced Regex | Lookahead/Lookbehind, Greedy vs Non-greedy, Optimization | 4-6 hours |
-| **Week 6** | Practical Applications | Data validation, Text cleaning, Pattern extraction | 4-6 hours |
+| Day | Module | Topics | Key Deliverables | Duration |
+|-----|--------|--------|------------------|----------|
+| **Day 8** | SQL Fundamentals | Database intro, MySQL installation, SELECT, USE, DESCRIBE, SHOW | IMDB database setup | 6-8 hours |
+| **Day 9** | Filtering & Sorting | LIMIT, OFFSET, ORDER BY, DISTINCT, WHERE, LIKE, IN, BETWEEN | Complex filtering queries | 6-8 hours |
+| **Day 10** | Operators & Aggregation | Comparison operators, NULL handling, Logical operators, COUNT, SUM, AVG, MIN, MAX | Aggregation reports | 6-8 hours |
+| **Day 11** | Joins & Grouping | GROUP BY, HAVING, INNER/LEFT/RIGHT/CROSS/SELF JOINs | Multi-table analysis | 6-8 hours |
+| **Day 12** | Advanced SQL | Subqueries, DML (INSERT/UPDATE/DELETE), DDL (CREATE/ALTER/DROP), DCL (GRANT/REVOKE) | Database management | 6-8 hours |
 
-### 📊 Hands-on Projects Timeline
+**Total: 30-40 hours**
 
-| Project | Week | Skills Applied |
-|---------|------|----------------|
-| Tax Calculator | Week 1 | Variables, Operators, Basic I/O |
-| Age Calculator | Week 1 | Type conversion, Integer division, Modulus |
-| Rock, Paper, Scissors | Week 2 | Conditionals, random module, Logical operators |
-| Loan Calculator | Week 2 | Loops, range(), break statement, f-strings |
-| Weather Reader | Week 3 | APIs, requests library, JSON, Dictionaries |
-| File Organizer | Week 5 | File handling, os module, shutil, Loops |
+---
+
+### 🔍 Regular Expressions - Optional Advanced Track (8 Days)
+
+| Day | Module | Topics | Key Deliverables | Duration |
+|-----|--------|--------|------------------|----------|
+| **Day 1** | Regex Basics | Literal characters, Special characters, Character classes | Basic pattern matching | 3-4 hours |
+| **Day 2** | Quantifiers | Repetition patterns (+, *, ?, {n,m}), Greedy vs non-greedy | Hex color validator | 3-4 hours |
+| **Day 3** | Python re Module | search(), match(), findall(), sub(), split(), compile() | Pattern extraction tool | 4-5 hours |
+| **Day 4** | Match Objects & Flags | Groups, Capturing, Flags (IGNORECASE, MULTILINE, DOTALL) | Data parser | 4-5 hours |
+| **Day 5** | Data Extraction | File parsing, Pattern extraction, Non-capturing groups | Log file analyzer | 4-5 hours |
+| **Day 6** | Validation & Security | Email/phone validation, Input sanitization, Security patterns | Validation library | 4-5 hours |
+| **Day 7** | Advanced Patterns | Lookahead/Lookbehind, Text cleaning, Transformation | Data cleaning tool | 4-5 hours |
+| **Day 8** | Optimization | Performance tuning, Debugging, Best practices, Alternatives | Optimized patterns | 3-4 hours |
+
+**Total: 29-37 hours**
+
+---
+
+### 📈 Complete Learning Timeline
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    WEEK 1: PYTHON FUNDAMENTALS                  │
+├─────────┬─────────┬─────────┬─────────┬─────────┬─────────┬────┤
+│  Day 1  │  Day 2  │  Day 3  │  Day 4  │  Day 5  │  Day 6  │ D7 │
+│  Basics │  Loops  │ Tuples  │ Nested  │Functions│ Lambda  │OOP │
+│         │  Lists  │  Dicts  │  Data   │  Scope  │  Files  │Err │
+└─────────┴─────────┴─────────┴─────────┴─────────┴─────────┴────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│                    WEEK 2: SQL & DATABASES                      │
+├─────────┬─────────┬─────────┬─────────┬─────────────────────────┤
+│  Day 8  │  Day 9  │ Day 10  │ Day 11  │        Day 12           │
+│   SQL   │ Filter  │  Agg    │  Joins  │      Advanced SQL       │
+│  Setup  │  Sort   │  Ops    │  Group  │   DML/DDL/Subqueries    │
+└─────────┴─────────┴─────────┴─────────┴─────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│              OPTIONAL: REGEX MASTERY (8 Days)                   │
+├────┬────┬────┬────┬────┬────┬────┬────────────────────────────┤
+│ D1 │ D2 │ D3 │ D4 │ D5 │ D6 │ D7 │           D8               │
+│Bsc │Qnt │ re │Mtc │Ext │Val │Adv │      Optimization          │
+└────┴────┴────┴────┴────┴────┴────┴────────────────────────────┘
+```
+
+---
+
+### 🎯 Hands-on Projects Timeline
+
+| Project | Day | Skills Applied | Difficulty |
+|---------|-----|----------------|------------|
+| Tax Calculator | Day 1 | Variables, Operators, Basic I/O | ⭐ Beginner |
+| Age Calculator | Day 2 | Type conversion, Integer division, Modulus | ⭐ Beginner |
+| Rock, Paper, Scissors | Day 2-7 | Conditionals, random module, OOP (advanced) | ⭐⭐ Intermediate |
+| Loan Calculator | Day 6 | Loops, range(), break, f-strings, File I/O | ⭐⭐ Intermediate |
+| IMDB Database Queries | Days 8-12 | SQL queries, Joins, Aggregation | ⭐⭐⭐ Advanced |
+| Log File Parser (Regex) | Optional | Regex patterns, File parsing, Data extraction | ⭐⭐⭐ Advanced |
+| Password Validator (Regex) | Optional | Regex validation, Security patterns | ⭐⭐ Intermediate |
 
 ---
 

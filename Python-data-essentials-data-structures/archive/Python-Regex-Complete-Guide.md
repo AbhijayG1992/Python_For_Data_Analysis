@@ -1,3 +1,28 @@
+## 📅 Regular Expressions Course Schedule
+
+### 🔍 PYTHON REGULAR EXPRESSIONS
+
+| Day            | Module                                     | Chapter                        | Topic                                                                                           |
+|----------------|--------------------------------------------|--------------------------------|-------------------------------------------------------------------------------------------------|
+| Day 1          | Introduction to Regular Expressions        | Regex Basics                   | Basic Concepts, Literal Characters, Case-Sensitivity                                            |
+| Day 1          | Introduction to Regular Expressions        | Regex Basics                   | Special Characters, Shorthand Character Classes, **Revision: Regex Fundamentals**               |
+| Day 2          | Introduction to Regular Expressions        | Quantifiers                    | Repetition (Quantifiers), Practical Examples, Hex Color Code Pattern                            |
+| Day 2          | Introduction to Regular Expressions        | Quantifiers                    | Practice Exercises, **Revision: Quantifiers**                                                   |
+| Day 3          | Using Regex in Python                      | re Module                      | Core Functions (search, match, fullmatch, findall)                                              |
+| Day 3          | Using Regex in Python                      | re Module                      | Core Functions (sub, subn, split, compile, escape)                                              |
+| Day 4          | Using Regex in Python                      | Match Objects                  | The Match Object, Regex Flags, Practical Examples                                               |
+| Day 4          | Using Regex in Python                      | Match Objects                  | **Revision: re Module Functions**                                                               |
+| Day 5          | Parsing and Extracting Data                | Data Extraction                | Reading Files and Finding Patterns, Extracting Specific Data                                    |
+| Day 5          | Parsing and Extracting Data                | Data Extraction                | Non-Capturing Groups, **Revision: Data Extraction**                                             |
+| Day 6          | Data Validation and Sanitization           | Input Validation               | Validating User Input, Sanitizing User Input                                                    |
+| Day 6          | Data Validation and Sanitization           | Input Validation               | Preventing Code Injection, **Revision: Validation Techniques**                                  |
+| Day 7          | Data Cleaning and Transformation           | Advanced Patterns              | Lookahead and Lookbehind Assertions, Standardizing Text Data                                    |
+| Day 7          | Data Cleaning and Transformation           | Advanced Patterns              | Hiding Sensitive Data, **Revision: Data Transformation**                                        |
+| Day 8          | Optimizing Regex Patterns                  | Performance                    | Greedy vs. Non-Greedy Matching, Using re.DEBUG                                                  |
+| Day 8          | Optimizing Regex Patterns                  | Performance                    | When to Use Simple String Methods, **Course Review and Best Practices**                         |
+
+---
+
 Here are detailed notes formatted for a `README.md` file, based on the provided course transcript.
 
 ````markdown

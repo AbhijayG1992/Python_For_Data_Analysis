@@ -15,18 +15,6 @@
 | Day 6          | Python for Data Science – Data Structures  | Functions                      | Lambda functions, Modules, Packages, File Handling                                              |
 | Day 7          | Python for Data Science – Data Structures  | Functions                      | Exception Handling, Debugging Python, **Revision: Functions**                                   |
 
-### 🗄️ SQL
-
-| Day            | Module                                     | Chapter                        | Topic                                                                                                                        |
-|----------------|--------------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Day 8          | Module 1: Fundamentals of Programming      | SQL                            | Introduction to Databases, Why SQL?                                                                                          |
-| Day 8          | Module 1: Fundamentals of Programming      | SQL                            | Execution of an SQL statement, IMDB dataset, Installing MySQL, Load IMDB data, USE, DESCRIBE, SHOW TABLES, SELECT            |
-| Day 9          | Module 1: Fundamentals of Programming      | SQL                            | LIMIT, OFFSET, ORDER BY, DISTINCT, WHERE                                                                                     |
-| Day 10         | Module 1: Fundamentals of Programming      | SQL                            | Comparison operators, NULL, Logical Operators, Aggregate Functions: COUNT, MIN, MAX, AVG, SUM                                |
-| Day 11         | Module 1: Fundamentals of Programming      | SQL                            | GROUP BY, HAVING, ORDER BY keywords, Join and Natural Join, Inner, Left, Right and Outer joins                               |
-| Day 12         | Module 1: Fundamentals of Programming      | SQL                            | Sub Queries/Nested Queries/Inner Queries, DML: INSERT, UPDATE, DELETE, DDL: CREATE TABLE, ALTER: ADD, MODIFY, DROP,          |
-| Day 12         | Module 1: Fundamentals of Programming      | SQL                            | DDL: DROP TABLE, TRUNCATE, DELETE, Data Control Language: GRANT, REVOKE                                                      |
-
 
 
 # Python Data Essentials: Python Introduction
