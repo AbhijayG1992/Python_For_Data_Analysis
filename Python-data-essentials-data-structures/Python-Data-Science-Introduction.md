@@ -25,7 +25,7 @@
 | Day 10         | Module 1: Fundamentals of Programming      | SQL                            | Comparison operators, NULL, Logical Operators, Aggregate Functions: COUNT, MIN, MAX, AVG, SUM                                |
 | Day 11         | Module 1: Fundamentals of Programming      | SQL                            | GROUP BY, HAVING, ORDER BY keywords, Join and Natural Join, Inner, Left, Right and Outer joins                               |
 | Day 12         | Module 1: Fundamentals of Programming      | SQL                            | Sub Queries/Nested Queries/Inner Queries, DML: INSERT, UPDATE, DELETE, DDL: CREATE TABLE, ALTER: ADD, MODIFY, DROP,          |
-|                |                                            |                                | DDL: DROP TABLE, TRUNCATE, DELETE, Data Control Language: GRANT, REVOKE                                                      |
+| Day 12         | Module 1: Fundamentals of Programming      | SQL                            | DDL: DROP TABLE, TRUNCATE, DELETE, Data Control Language: GRANT, REVOKE                                                      |
 
 
 
@@ -269,6 +269,473 @@ You have successfully installed and set up Jupyter Notebook on your system. Enjo
 
 ---
 
+# Day 1: Python Fundamentals
+
+## Keywords and Identifiers
+
+### Python Keywords
+
+**Keywords** are reserved words in Python that have special meanings and cannot be used as variable names, function names, or any other identifiers.
+
+#### Common Python Keywords:
+
+```python
+# Here are some important Python keywords:
+# and, or, not, if, elif, else, while, for, break, continue
+# True, False, None, in, is, def, class, return, import, from
+# try, except, finally, raise, with, as, lambda, pass, yield
+```
+
+#### Checking All Keywords:
+
+```python
+import keyword
+
+# Get all Python keywords
+print(keyword.kwlist)
+# Output: ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 
+#          'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', ...]
+
+# Check if a word is a keyword
+print(keyword.iskeyword('for'))    # Output: True
+print(keyword.iskeyword('hello'))  # Output: False
+```
+
+#### Examples of Keywords in Use:
+
+```python
+# Using 'if', 'elif', 'else' keywords
+age = 18
+if age < 13:
+    print("Child")
+elif age < 20:
+    print("Teenager")
+else:
+    print("Adult")
+
+# Using 'and', 'or', 'not' keywords
+x = 10
+y = 20
+print(x > 5 and y < 30)  # Output: True
+print(x > 15 or y < 30)  # Output: True
+print(not (x > 15))      # Output: True
+
+# Using 'True', 'False', 'None' keywords
+is_active = True
+is_deleted = False
+result = None
+```
+
+### Python Identifiers
+
+**Identifiers** are names given to variables, functions, classes, modules, or other objects in Python.
+
+#### Rules for Identifiers:
+
+1. **Must start with a letter (a-z, A-Z) or underscore (_)**
+2. **Can contain letters, digits (0-9), and underscores**
+3. **Cannot start with a digit**
+4. **Cannot be a Python keyword**
+5. **Case-sensitive** (age, Age, and AGE are different)
+6. **No special characters** like !, @, #, $, %, etc.
+
+#### Valid and Invalid Identifiers:
+
+```python
+# Valid identifiers
+name = "John"
+_age = 25
+student_1 = "Alice"
+myVar = 100
+CONSTANT_VALUE = 3.14
+
+# Invalid identifiers (these will cause errors)
+# 1student = "Bob"        # Cannot start with a digit
+# my-var = 50             # Hyphen not allowed
+# for = 10                # 'for' is a keyword
+# my var = 20             # Spaces not allowed
+# @username = "test"      # Special characters not allowed
+```
+
+#### Naming Conventions (PEP 8):
+
+```python
+# Variables and functions: lowercase with underscores
+user_name = "Alice"
+total_count = 100
+
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers)
+
+# Constants: UPPERCASE with underscores
+MAX_SIZE = 100
+PI = 3.14159
+
+# Classes: PascalCase (CapWords)
+class StudentRecord:
+    pass
+
+class DataProcessor:
+    pass
+```
+
+---
+
+## Comments in Python
+
+**Comments** are used to explain code and make it more readable. Python ignores comments during execution.
+
+### Single-Line Comments
+
+Use the `#` symbol for single-line comments:
+
+```python
+# This is a single-line comment
+print("Hello, World!")  # This comment is at the end of a line
+
+# Calculate the area of a rectangle
+length = 10  # in meters
+width = 5    # in meters
+area = length * width
+print(f"Area: {area} square meters")
+```
+
+### Multi-Line Comments
+
+Python doesn't have a specific multi-line comment syntax, but you can use:
+
+**Method 1: Multiple single-line comments**
+```python
+# This is a multi-line comment
+# spanning multiple lines
+# to explain complex logic
+x = 10
+y = 20
+```
+
+**Method 2: Multi-line strings (docstrings)**
+```python
+"""
+This is a multi-line comment
+using triple quotes.
+It can span multiple lines.
+"""
+
+'''
+You can also use single quotes
+for multi-line comments.
+'''
+
+def greet(name):
+    """
+    This is a docstring.
+    It documents what the function does.
+    
+    Parameters:
+        name (str): The name to greet
+    
+    Returns:
+        str: A greeting message
+    """
+    return f"Hello, {name}!"
+```
+
+### Best Practices for Comments:
+
+```python
+# Good comments explain WHY, not WHAT
+# Bad: Increment x by 1
+x = x + 1
+
+# Good: Adjust for zero-based indexing
+x = x + 1
+
+# Use comments to explain complex logic
+def calculate_discount(price, customer_type):
+    # Premium customers get 20% discount
+    # Regular customers get 10% discount
+    if customer_type == "premium":
+        return price * 0.8
+    else:
+        return price * 0.9
+```
+
+---
+
+## Indentation in Python
+
+**Indentation** refers to the spaces at the beginning of a code line. Unlike other programming languages that use braces `{}`, Python uses indentation to define code blocks.
+
+### Why Indentation Matters:
+
+```python
+# Correct indentation
+if 5 > 2:
+    print("Five is greater than two!")  # This is indented
+    print("This is also part of the if block")
+
+# Incorrect indentation (will cause IndentationError)
+# if 5 > 2:
+# print("Five is greater than two!")  # Error: expected an indented block
+```
+
+### Standard Indentation:
+
+Python recommends using **4 spaces** per indentation level (PEP 8 standard).
+
+```python
+# Using 4 spaces for indentation
+def calculate_total(items):
+    total = 0
+    for item in items:
+        if item > 0:
+            total += item
+    return total
+
+# Nested indentation
+for i in range(3):
+    print(f"Outer loop: {i}")
+    for j in range(2):
+        print(f"  Inner loop: {j}")
+        if j == 1:
+            print("    Condition met!")
+```
+
+### Indentation in Different Structures:
+
+```python
+# If-elif-else
+score = 85
+if score >= 90:
+    grade = 'A'
+    print("Excellent!")
+elif score >= 80:
+    grade = 'B'
+    print("Good job!")
+else:
+    grade = 'C'
+    print("Keep trying!")
+
+# For loop
+fruits = ['apple', 'banana', 'cherry']
+for fruit in fruits:
+    print(f"I like {fruit}")
+    if fruit == 'banana':
+        print("  Banana is my favorite!")
+
+# While loop
+count = 0
+while count < 3:
+    print(f"Count: {count}")
+    count += 1
+
+# Function definition
+def greet_user(name, age):
+    message = f"Hello, {name}!"
+    if age >= 18:
+        message += " You are an adult."
+    else:
+        message += " You are a minor."
+    return message
+```
+
+### Common Indentation Errors:
+
+```python
+# IndentationError: expected an indented block
+# def my_function():
+# print("Hello")  # Error: needs indentation
+
+# IndentationError: unexpected indent
+# x = 5
+#     y = 10  # Error: unexpected indentation
+
+# Mixing tabs and spaces (avoid this!)
+# Use either tabs OR spaces, not both
+```
+
+---
+
+## Python Statements
+
+A **statement** is an instruction that the Python interpreter can execute. Python has different types of statements.
+
+### Types of Statements:
+
+#### 1. Simple Statements (Single Line)
+
+```python
+# Assignment statements
+x = 10
+name = "Alice"
+is_valid = True
+
+# Expression statements
+5 + 3
+print("Hello")
+len([1, 2, 3])
+
+# Import statements
+import math
+from datetime import datetime
+
+# Pass statement (does nothing, placeholder)
+def empty_function():
+    pass  # TODO: Implement this later
+
+# Delete statement
+x = 10
+del x  # Deletes the variable x
+
+# Return statement
+def get_sum(a, b):
+    return a + b
+
+# Break and continue (in loops)
+for i in range(10):
+    if i == 5:
+        break  # Exit the loop
+    if i % 2 == 0:
+        continue  # Skip to next iteration
+    print(i)
+```
+
+#### 2. Compound Statements (Multiple Lines)
+
+Compound statements contain groups of other statements and affect their execution.
+
+**If Statement:**
+```python
+temperature = 25
+
+if temperature > 30:
+    print("It's hot!")
+    print("Stay hydrated!")
+elif temperature > 20:
+    print("It's pleasant!")
+    print("Enjoy the weather!")
+else:
+    print("It's cold!")
+    print("Wear warm clothes!")
+```
+
+**For Loop Statement:**
+```python
+# Iterate over a list
+fruits = ['apple', 'banana', 'cherry']
+for fruit in fruits:
+    print(f"I like {fruit}")
+
+# Iterate over a range
+for i in range(5):
+    print(f"Number: {i}")
+
+# Iterate over a dictionary
+student = {'name': 'Alice', 'age': 20, 'grade': 'A'}
+for key, value in student.items():
+    print(f"{key}: {value}")
+```
+
+**While Loop Statement:**
+```python
+# Basic while loop
+count = 0
+while count < 5:
+    print(f"Count: {count}")
+    count += 1
+
+# While loop with condition
+password = ""
+while password != "secret":
+    password = input("Enter password: ")
+print("Access granted!")
+```
+
+**Function Definition Statement:**
+```python
+def calculate_area(length, width):
+    """Calculate the area of a rectangle."""
+    area = length * width
+    return area
+
+result = calculate_area(10, 5)
+print(f"Area: {result}")
+```
+
+**Class Definition Statement:**
+```python
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def display_info(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+
+student1 = Student("Alice", 20)
+student1.display_info()
+```
+
+**Try-Except Statement:**
+```python
+try:
+    number = int(input("Enter a number: "))
+    result = 100 / number
+    print(f"Result: {result}")
+except ValueError:
+    print("Invalid input! Please enter a number.")
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+except Exception as e:
+    print(f"An error occurred: {e}")
+finally:
+    print("Execution completed.")
+```
+
+**With Statement:**
+```python
+# File handling with automatic cleanup
+with open('example.txt', 'w') as file:
+    file.write("Hello, World!")
+# File is automatically closed after the block
+```
+
+### Multiple Statements on One Line:
+
+```python
+# Using semicolon (not recommended, reduces readability)
+x = 5; y = 10; z = x + y
+
+# Better approach: separate lines
+x = 5
+y = 10
+z = x + y
+```
+
+### Line Continuation:
+
+```python
+# Using backslash for long lines
+total = 1 + 2 + 3 + 4 + 5 + \
+        6 + 7 + 8 + 9 + 10
+
+# Implicit line continuation (inside parentheses, brackets, braces)
+fruits = ['apple', 'banana', 'cherry',
+          'date', 'elderberry', 'fig']
+
+result = (1 + 2 + 3 +
+          4 + 5 + 6 +
+          7 + 8 + 9)
+
+# Function call with multiple arguments
+print("Hello",
+      "World",
+      "from",
+      "Python")
+```
+
+---
+
 # Basics of Python
 
 ## Python Identifiers and Literals
@@ -502,6 +969,658 @@ print((b >= c) and (a <= c))  # Output: False
 #### Logical OR
 ```python
 print((b >= c) or (a <= c))  # Output: True
+```
+
+---
+
+# Day 2: Control Flow - Loops
+
+## While Loop
+
+The **while loop** executes a block of code repeatedly as long as a specified condition is `True`.
+
+### Basic While Loop Syntax:
+
+```python
+while condition:
+    # Code block to execute
+    # This runs as long as condition is True
+```
+
+### Simple While Loop Examples:
+
+```python
+# Example 1: Count from 0 to 4
+count = 0
+while count < 5:
+    print(f"Count: {count}")
+    count += 1
+
+# Output:
+# Count: 0
+# Count: 1
+# Count: 2
+# Count: 3
+# Count: 4
+
+# Example 2: Sum of numbers
+total = 0
+number = 1
+while number <= 10:
+    total += number
+    number += 1
+print(f"Sum of 1 to 10: {total}")  # Output: Sum of 1 to 10: 55
+```
+
+### While Loop with User Input:
+
+```python
+# Password validation
+password = ""
+while password != "python123":
+    password = input("Enter the password: ")
+    if password != "python123":
+        print("Incorrect password. Try again!")
+print("Access granted!")
+
+# Guess the number game
+secret_number = 7
+guess = 0
+attempts = 0
+
+while guess != secret_number:
+    guess = int(input("Guess the number (1-10): "))
+    attempts += 1
+    if guess < secret_number:
+        print("Too low!")
+    elif guess > secret_number:
+        print("Too high!")
+    else:
+        print(f"Correct! You guessed it in {attempts} attempts!")
+```
+
+### While Loop with Multiple Conditions:
+
+```python
+# ATM withdrawal simulation
+balance = 1000
+pin = "1234"
+entered_pin = ""
+attempts = 0
+max_attempts = 3
+
+while entered_pin != pin and attempts < max_attempts:
+    entered_pin = input("Enter your PIN: ")
+    attempts += 1
+    if entered_pin != pin:
+        remaining = max_attempts - attempts
+        if remaining > 0:
+            print(f"Incorrect PIN. {remaining} attempts remaining.")
+        else:
+            print("Card blocked due to too many incorrect attempts!")
+
+if entered_pin == pin:
+    print(f"Welcome! Your balance is ${balance}")
+```
+
+### Infinite Loops (Be Careful!):
+
+```python
+# Infinite loop example (use Ctrl+C to stop)
+# while True:
+#     print("This will run forever!")
+
+# Controlled infinite loop with break
+while True:
+    user_input = input("Enter 'quit' to exit: ")
+    if user_input.lower() == 'quit':
+        print("Goodbye!")
+        break
+    print(f"You entered: {user_input}")
+```
+
+### While Loop with Else Clause:
+
+The `else` clause executes when the loop completes normally (not interrupted by `break`).
+
+```python
+# Example: Finding a number in a list
+numbers = [1, 3, 5, 7, 9]
+target = 6
+index = 0
+
+while index < len(numbers):
+    if numbers[index] == target:
+        print(f"Found {target} at index {index}")
+        break
+    index += 1
+else:
+    print(f"{target} not found in the list")
+
+# Output: 6 not found in the list
+```
+
+---
+
+## For Loop
+
+The **for loop** is used to iterate over a sequence (list, tuple, string, range, etc.).
+
+### Basic For Loop Syntax:
+
+```python
+for variable in sequence:
+    # Code block to execute
+    # Runs once for each item in the sequence
+```
+
+### For Loop with Lists:
+
+```python
+# Iterate over a list of fruits
+fruits = ['apple', 'banana', 'cherry', 'date']
+for fruit in fruits:
+    print(f"I like {fruit}")
+
+# Output:
+# I like apple
+# I like banana
+# I like cherry
+# I like date
+
+# Iterate with index using enumerate()
+for index, fruit in enumerate(fruits):
+    print(f"{index}: {fruit}")
+
+# Output:
+# 0: apple
+# 1: banana
+# 2: cherry
+# 3: date
+
+# Start enumeration from 1
+for index, fruit in enumerate(fruits, start=1):
+    print(f"{index}. {fruit}")
+```
+
+### For Loop with range():
+
+```python
+# range(stop) - from 0 to stop-1
+for i in range(5):
+    print(i, end=' ')  # Output: 0 1 2 3 4
+
+print()  # New line
+
+# range(start, stop) - from start to stop-1
+for i in range(2, 8):
+    print(i, end=' ')  # Output: 2 3 4 5 6 7
+
+print()  # New line
+
+# range(start, stop, step) - with custom step
+for i in range(0, 10, 2):
+    print(i, end=' ')  # Output: 0 2 4 6 8
+
+print()  # New line
+
+# Reverse range
+for i in range(10, 0, -1):
+    print(i, end=' ')  # Output: 10 9 8 7 6 5 4 3 2 1
+```
+
+### For Loop with Strings:
+
+```python
+# Iterate over characters in a string
+message = "Python"
+for char in message:
+    print(char)
+
+# Output:
+# P
+# y
+# t
+# h
+# o
+# n
+
+# Count vowels in a string
+text = "Hello World"
+vowels = "aeiouAEIOU"
+vowel_count = 0
+
+for char in text:
+    if char in vowels:
+        vowel_count += 1
+print(f"Number of vowels: {vowel_count}")  # Output: Number of vowels: 3
+```
+
+### For Loop with Dictionaries:
+
+```python
+# Iterate over dictionary keys
+student = {'name': 'Alice', 'age': 20, 'grade': 'A', 'city': 'New York'}
+
+for key in student:
+    print(f"{key}: {student[key]}")
+
+# Iterate over key-value pairs using items()
+for key, value in student.items():
+    print(f"{key} = {value}")
+
+# Iterate over values only
+for value in student.values():
+    print(value)
+
+# Iterate over keys only
+for key in student.keys():
+    print(key)
+```
+
+### Nested For Loops:
+
+```python
+# Multiplication table
+for i in range(1, 6):
+    for j in range(1, 6):
+        print(f"{i} x {j} = {i*j:2d}", end="  ")
+    print()  # New line after each row
+
+# Pattern printing
+for i in range(1, 6):
+    for j in range(i):
+        print("*", end="")
+    print()
+
+# Output:
+# *
+# **
+# ***
+# ****
+# *****
+```
+
+### For Loop with Else Clause:
+
+```python
+# Search for a prime number
+number = 17
+for i in range(2, number):
+    if number % i == 0:
+        print(f"{number} is not prime (divisible by {i})")
+        break
+else:
+    print(f"{number} is a prime number")
+
+# Output: 17 is a prime number
+```
+
+---
+
+## Break Statement
+
+The **break** statement terminates the loop immediately and transfers control to the statement following the loop.
+
+### Break in While Loop:
+
+```python
+# Stop when a condition is met
+count = 0
+while count < 10:
+    if count == 5:
+        print("Breaking at 5")
+        break
+    print(count)
+    count += 1
+
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
+# Breaking at 5
+
+# Search in a list
+numbers = [10, 20, 30, 40, 50]
+target = 30
+index = 0
+
+while index < len(numbers):
+    if numbers[index] == target:
+        print(f"Found {target} at index {index}")
+        break
+    index += 1
+```
+
+### Break in For Loop:
+
+```python
+# Find first even number
+numbers = [1, 3, 5, 8, 9, 11]
+for num in numbers:
+    if num % 2 == 0:
+        print(f"First even number: {num}")
+        break
+
+# Output: First even number: 8
+
+# Login system with limited attempts
+max_attempts = 3
+correct_password = "secure123"
+
+for attempt in range(1, max_attempts + 1):
+    password = input(f"Attempt {attempt}/{max_attempts} - Enter password: ")
+    if password == correct_password:
+        print("Login successful!")
+        break
+    else:
+        remaining = max_attempts - attempt
+        if remaining > 0:
+            print(f"Incorrect! {remaining} attempts remaining.")
+else:
+    print("Account locked. Too many failed attempts.")
+```
+
+### Break in Nested Loops:
+
+```python
+# Break only exits the innermost loop
+for i in range(3):
+    print(f"Outer loop: {i}")
+    for j in range(5):
+        if j == 2:
+            print(f"  Breaking inner loop at j={j}")
+            break
+        print(f"  Inner loop: {j}")
+
+# To break out of all loops, use a flag
+found = False
+for i in range(3):
+    for j in range(3):
+        if i == 1 and j == 1:
+            print(f"Found at ({i}, {j})")
+            found = True
+            break
+    if found:
+        break
+```
+
+---
+
+## Continue Statement
+
+The **continue** statement skips the rest of the current iteration and moves to the next iteration of the loop.
+
+### Continue in While Loop:
+
+```python
+# Skip even numbers
+count = 0
+while count < 10:
+    count += 1
+    if count % 2 == 0:
+        continue  # Skip even numbers
+    print(count)
+
+# Output: 1 3 5 7 9
+
+# Process only valid inputs
+attempts = 0
+while attempts < 5:
+    attempts += 1
+    user_input = input("Enter a positive number: ")
+    
+    if not user_input.isdigit():
+        print("Invalid input! Please enter a number.")
+        continue
+    
+    number = int(user_input)
+    if number <= 0:
+        print("Number must be positive!")
+        continue
+    
+    print(f"You entered: {number}")
+    print(f"Square: {number ** 2}")
+```
+
+### Continue in For Loop:
+
+```python
+# Skip specific values
+for i in range(1, 11):
+    if i == 5:
+        continue  # Skip 5
+    print(i, end=' ')
+
+# Output: 1 2 3 4 6 7 8 9 10
+
+# Process only certain items
+fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+for fruit in fruits:
+    if len(fruit) < 6:
+        continue  # Skip fruits with less than 6 characters
+    print(fruit)
+
+# Output:
+# banana
+# cherry
+# elderberry
+
+# Skip negative numbers in calculations
+numbers = [10, -5, 20, -3, 15, -8, 25]
+total = 0
+for num in numbers:
+    if num < 0:
+        continue  # Skip negative numbers
+    total += num
+print(f"Sum of positive numbers: {total}")  # Output: Sum of positive numbers: 70
+```
+
+### Continue with Else Clause:
+
+```python
+# Find all odd numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+odd_numbers = []
+
+for num in numbers:
+    if num % 2 == 0:
+        continue  # Skip even numbers
+    odd_numbers.append(num)
+else:
+    print(f"Odd numbers: {odd_numbers}")
+
+# Output: Odd numbers: [1, 3, 5, 7, 9]
+```
+
+### Practical Example: Data Filtering:
+
+```python
+# Filter and process student grades
+students = [
+    {'name': 'Alice', 'score': 85},
+    {'name': 'Bob', 'score': 45},
+    {'name': 'Charlie', 'score': 92},
+    {'name': 'David', 'score': 35},
+    {'name': 'Eve', 'score': 78}
+]
+
+print("Students who passed (score >= 50):")
+for student in students:
+    if student['score'] < 50:
+        continue  # Skip students who failed
+    print(f"{student['name']}: {student['score']}")
+
+# Output:
+# Students who passed (score >= 50):
+# Alice: 85
+# Charlie: 92
+# Eve: 78
+```
+
+---
+
+## Combining Break and Continue
+
+You can use both `break` and `continue` in the same loop for complex logic:
+
+```python
+# Process numbers with multiple conditions
+numbers = [5, 12, -3, 18, 0, 25, -7, 30, 15]
+
+for num in numbers:
+    # Skip negative numbers
+    if num < 0:
+        print(f"Skipping negative number: {num}")
+        continue
+    
+    # Stop if we encounter zero
+    if num == 0:
+        print("Encountered zero. Stopping.")
+        break
+    
+    # Process only even numbers
+    if num % 2 != 0:
+        continue
+    
+    print(f"Processing even number: {num}, Square: {num ** 2}")
+
+# Output:
+# Skipping negative number: -3
+# Processing even number: 12, Square: 144
+# Processing even number: 18, Square: 324
+# Encountered zero. Stopping.
+```
+
+### Real-World Example: Menu System:
+
+```python
+# Simple calculator menu
+while True:
+    print("\n=== Calculator Menu ===")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    print("5. Exit")
+    
+    choice = input("Enter your choice (1-5): ")
+    
+    # Exit the program
+    if choice == '5':
+        print("Thank you for using the calculator!")
+        break
+    
+    # Validate choice
+    if choice not in ['1', '2', '3', '4']:
+        print("Invalid choice! Please try again.")
+        continue
+    
+    # Get numbers from user
+    try:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+    except ValueError:
+        print("Invalid input! Please enter numbers only.")
+        continue
+    
+    # Perform calculation
+    if choice == '1':
+        result = num1 + num2
+        print(f"Result: {num1} + {num2} = {result}")
+    elif choice == '2':
+        result = num1 - num2
+        print(f"Result: {num1} - {num2} = {result}")
+    elif choice == '3':
+        result = num1 * num2
+        print(f"Result: {num1} * {num2} = {result}")
+    elif choice == '4':
+        if num2 == 0:
+            print("Error: Cannot divide by zero!")
+            continue
+        result = num1 / num2
+        print(f"Result: {num1} / {num2} = {result}")
+```
+
+---
+
+## Revision: Python Basics
+
+### Key Concepts Covered in Days 1-2:
+
+#### 1. **Keywords and Identifiers**
+- Reserved words in Python
+- Rules for naming variables and functions
+- PEP 8 naming conventions
+
+#### 2. **Comments and Documentation**
+- Single-line comments with `#`
+- Multi-line comments with `'''` or `"""`
+- Docstrings for functions and classes
+
+#### 3. **Indentation**
+- Python uses indentation to define code blocks
+- Standard is 4 spaces per level
+- Critical for proper code execution
+
+#### 4. **Data Types**
+- Integers, Floats, Strings, Booleans
+- Type conversion functions
+- Dynamic typing
+
+#### 5. **Operators**
+- Arithmetic: `+`, `-`, `*`, `/`, `//`, `%`, `**`
+- Comparison: `==`, `!=`, `<`, `>`, `<=`, `>=`
+- Logical: `and`, `or`, `not`
+
+#### 6. **Control Flow**
+- `if`, `elif`, `else` statements
+- Conditional expressions
+- Nested conditions
+
+#### 7. **Loops**
+- `while` loop for condition-based iteration
+- `for` loop for sequence iteration
+- `range()` function for numeric sequences
+- `break` to exit loops
+- `continue` to skip iterations
+- `else` clause with loops
+
+### Practice Exercises:
+
+```python
+# Exercise 1: Print all even numbers from 1 to 20
+for num in range(2, 21, 2):
+    print(num, end=' ')
+print()
+
+# Exercise 2: Calculate factorial using while loop
+n = 5
+factorial = 1
+i = 1
+while i <= n:
+    factorial *= i
+    i += 1
+print(f"Factorial of {n} is {factorial}")
+
+# Exercise 3: Find sum of digits
+number = 12345
+sum_digits = 0
+while number > 0:
+    digit = number % 10
+    sum_digits += digit
+    number //= 10
+print(f"Sum of digits: {sum_digits}")
+
+# Exercise 4: Print multiplication table
+num = 7
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
+```
+
+---
 ````
 ---
 # Python Packages and Data Structures
@@ -1184,5 +2303,518 @@ Key Points
 #### Can be created empty or populated, using curly braces `{}` or the `dict()` constructor.
 #### Commonly used for fast lookups, efficient data organization, and mapping relationships.
 
+
+---
+
+# Day 5: Functions
+
+## Introduction to Functions
+
+A **function** is a reusable block of code that performs a specific task. Functions help organize code, make it more readable, and avoid repetition (DRY - Don't Repeat Yourself principle).
+
+### Why Use Functions?
+
+1. **Code Reusability**: Write once, use many times
+2. **Modularity**: Break complex problems into smaller, manageable pieces
+3. **Maintainability**: Easier to update and debug
+4. **Abstraction**: Hide implementation details
+5. **Testing**: Easier to test individual components
+
+### Function Syntax:
+
+```python
+def function_name(parameters):
+    """Docstring: describes what the function does"""
+    # Function body
+    # Code to execute
+    return value  # Optional
+```
+
+### Simple Function Examples:
+
+```python
+# Function without parameters
+def greet():
+    """Print a greeting message"""
+    print("Hello, World!")
+
+greet()  # Output: Hello, World!
+
+# Function with parameters
+def greet_person(name):
+    """Greet a person by name"""
+    print(f"Hello, {name}!")
+
+greet_person("Alice")  # Output: Hello, Alice!
+
+# Function with return value
+def add_numbers(a, b):
+    """Add two numbers and return the result"""
+    result = a + b
+    return result
+
+sum_result = add_numbers(5, 3)
+print(f"Sum: {sum_result}")  # Output: Sum: 8
+```
+
+# Day 5-7: Functions, Lambda, File Handling, and Exception Handling
+
+## Day 5: Functions (Continued)
+
+### Recursive Functions
+
+A **recursive function** is a function that calls itself to solve a problem.
+
+```python
+# Factorial using recursion
+def factorial(n):
+    """Calculate factorial using recursion"""
+    if n == 0 or n == 1:  # Base case
+        return 1
+    else:
+        return n * factorial(n - 1)  # Recursive case
+
+print(f"5! = {factorial(5)}")  # Output: 5! = 120
+
+# Fibonacci sequence
+def fibonacci(n):
+    """Return the nth Fibonacci number"""
+    if n <= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+# Print first 10 Fibonacci numbers
+for i in range(10):
+    print(fibonacci(i), end=' ')
+# Output: 0 1 1 2 3 5 8 13 21 34
+```
+
+---
+
+## Day 6: Lambda Functions, Modules, Packages, and File Handling
+
+### Lambda Functions
+
+**Lambda functions** are small anonymous functions defined with the `lambda` keyword.
+
+```python
+# Basic lambda function
+square = lambda x: x ** 2
+print(square(5))  # Output: 25
+
+# Lambda with multiple parameters
+add = lambda a, b: a + b
+print(add(3, 7))  # Output: 10
+
+# Lambda with conditional
+max_value = lambda a, b: a if a > b else b
+print(max_value(10, 20))  # Output: 20
+
+# Using lambda with map()
+numbers = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x**2, numbers))
+print(squared)  # Output: [1, 4, 9, 16, 25]
+
+# Using lambda with filter()
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+print(evens)  # Output: [2, 4]
+
+# Using lambda with sorted()
+students = [
+    {'name': 'Alice', 'grade': 85},
+    {'name': 'Bob', 'grade': 92},
+    {'name': 'Charlie', 'grade': 78}
+]
+sorted_students = sorted(students, key=lambda x: x['grade'], reverse=True)
+for student in sorted_students:
+    print(f"{student['name']}: {student['grade']}")
+```
+
+### File Handling
+
+Working with files is essential for data persistence.
+
+#### Reading Files:
+
+```python
+# Method 1: Using with statement (recommended)
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+# File is automatically closed
+
+# Read line by line
+with open('example.txt', 'r') as file:
+    for line in file:
+        print(line.strip())
+
+# Read all lines into a list
+with open('example.txt', 'r') as file:
+    lines = file.readlines()
+    print(lines)
+
+# Read specific number of characters
+with open('example.txt', 'r') as file:
+    first_10_chars = file.read(10)
+    print(first_10_chars)
+```
+
+#### Writing Files:
+
+```python
+# Write to file (overwrites existing content)
+with open('output.txt', 'w') as file:
+    file.write("Hello, World!\n")
+    file.write("This is a new line.\n")
+
+# Append to file
+with open('output.txt', 'a') as file:
+    file.write("This line is appended.\n")
+
+# Write multiple lines
+lines = ["Line 1\n", "Line 2\n", "Line 3\n"]
+with open('output.txt', 'w') as file:
+    file.writelines(lines)
+```
+
+#### File Modes:
+
+```python
+# 'r'  - Read (default)
+# 'w'  - Write (overwrites)
+# 'a'  - Append
+# 'r+' - Read and write
+# 'w+' - Write and read (overwrites)
+# 'a+' - Append and read
+# 'rb' - Read binary
+# 'wb' - Write binary
+```
+
+#### Working with CSV Files:
+
+```python
+import csv
+
+# Write CSV
+data = [
+    ['Name', 'Age', 'City'],
+    ['Alice', 25, 'New York'],
+    ['Bob', 30, 'London'],
+    ['Charlie', 28, 'Paris']
+]
+
+with open('people.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+# Read CSV
+with open('people.csv', 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
+
+# Using DictReader/DictWriter
+with open('people.csv', 'r') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        print(f"{row['Name']} is {row['Age']} years old")
+```
+
+#### Working with JSON Files:
+
+```python
+import json
+
+# Write JSON
+data = {
+    'name': 'Alice',
+    'age': 25,
+    'city': 'New York',
+    'skills': ['Python', 'Data Analysis', 'Machine Learning']
+}
+
+with open('data.json', 'w') as file:
+    json.dump(data, file, indent=4)
+
+# Read JSON
+with open('data.json', 'r') as file:
+    loaded_data = json.load(file)
+    print(loaded_data)
+    print(f"Name: {loaded_data['name']}")
+```
+
+---
+
+## Day 7: Exception Handling and Debugging
+
+### Exception Handling
+
+**Exceptions** are errors that occur during program execution. Proper handling prevents crashes.
+
+#### Try-Except Block:
+
+```python
+# Basic try-except
+try:
+    number = int(input("Enter a number: "))
+    result = 100 / number
+    print(f"Result: {result}")
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero!")
+except ValueError:
+    print("Error: Invalid input! Please enter a number.")
+
+# Catch multiple exceptions
+try:
+    file = open('nonexistent.txt', 'r')
+    content = file.read()
+except (FileNotFoundError, PermissionError) as e:
+    print(f"File error: {e}")
+
+# Catch all exceptions
+try:
+    risky_operation()
+except Exception as e:
+    print(f"An error occurred: {e}")
+```
+
+#### Try-Except-Else-Finally:
+
+```python
+try:
+    file = open('data.txt', 'r')
+    content = file.read()
+except FileNotFoundError:
+    print("File not found!")
+else:
+    # Executes if no exception occurred
+    print("File read successfully!")
+    print(content)
+finally:
+    # Always executes, regardless of exceptions
+    print("Cleanup: Closing resources")
+    if 'file' in locals():
+        file.close()
+```
+
+#### Raising Exceptions:
+
+```python
+def validate_age(age):
+    """Validate age input"""
+    if age < 0:
+        raise ValueError("Age cannot be negative!")
+    if age > 150:
+        raise ValueError("Age seems unrealistic!")
+    return True
+
+try:
+    validate_age(-5)
+except ValueError as e:
+    print(f"Validation error: {e}")
+
+# Custom exceptions
+class InsufficientFundsError(Exception):
+    """Raised when account has insufficient funds"""
+    pass
+
+def withdraw(balance, amount):
+    if amount > balance:
+        raise InsufficientFundsError(f"Cannot withdraw ${amount}. Balance: ${balance}")
+    return balance - amount
+
+try:
+    new_balance = withdraw(100, 150)
+except InsufficientFundsError as e:
+    print(e)
+```
+
+### Debugging Python
+
+#### Using print() for Debugging:
+
+```python
+def calculate_average(numbers):
+    print(f"DEBUG: Input numbers: {numbers}")  # Debug print
+    total = sum(numbers)
+    print(f"DEBUG: Total: {total}")  # Debug print
+    count = len(numbers)
+    print(f"DEBUG: Count: {count}")  # Debug print
+    average = total / count
+    return average
+
+result = calculate_average([10, 20, 30, 40, 50])
+print(f"Average: {result}")
+```
+
+#### Using assert for Debugging:
+
+```python
+def calculate_discount(price, discount_percent):
+    assert 0 <= discount_percent <= 100, "Discount must be between 0 and 100"
+    assert price > 0, "Price must be positive"
+    
+    discount = price * (discount_percent / 100)
+    return price - discount
+
+# This will raise AssertionError
+# calculate_discount(100, 150)
+```
+
+#### Common Debugging Techniques:
+
+```python
+# 1. Type checking
+def process_data(data):
+    print(f"Type of data: {type(data)}")
+    print(f"Data: {data}")
+
+# 2. Checking variable values at different points
+def complex_calculation(x, y):
+    step1 = x * 2
+    print(f"After step 1: {step1}")
+    
+    step2 = step1 + y
+    print(f"After step 2: {step2}")
+    
+    result = step2 / 10
+    print(f"Final result: {result}")
+    return result
+
+# 3. Using try-except to catch and display errors
+def safe_divide(a, b):
+    try:
+        result = a / b
+        return result
+    except Exception as e:
+        print(f"Error type: {type(e).__name__}")
+        print(f"Error message: {e}")
+        return None
+```
+
+### Revision: Functions
+
+#### Key Concepts Summary:
+
+```python
+# 1. Basic function
+def greet(name):
+    return f"Hello, {name}!"
+
+# 2. Default parameters
+def power(base, exp=2):
+    return base ** exp
+
+# 3. *args and **kwargs
+def flexible_func(*args, **kwargs):
+    print(f"Args: {args}")
+    print(f"Kwargs: {kwargs}")
+
+# 4. Lambda function
+square = lambda x: x ** 2
+
+# 5. Recursive function
+def factorial(n):
+    return 1 if n <= 1 else n * factorial(n - 1)
+
+# 6. File handling
+with open('file.txt', 'r') as f:
+    content = f.read()
+
+# 7. Exception handling
+try:
+    risky_operation()
+except Exception as e:
+    print(f"Error: {e}")
+finally:
+    cleanup()
+```
+
+### Practice Exercises:
+
+```python
+# Exercise 1: Create a function to check if a number is prime
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Exercise 2: Read a file and count word frequency
+def count_words(filename):
+    word_count = {}
+    try:
+        with open(filename, 'r') as file:
+            for line in file:
+                words = line.lower().split()
+                for word in words:
+                    word_count[word] = word_count.get(word, 0) + 1
+    except FileNotFoundError:
+        print(f"File {filename} not found!")
+    return word_count
+
+# Exercise 3: Create a calculator with exception handling
+def calculator():
+    while True:
+        try:
+            num1 = float(input("Enter first number (or 'q' to quit): "))
+            operation = input("Enter operation (+, -, *, /): ")
+            num2 = float(input("Enter second number: "))
+            
+            if operation == '+':
+                result = num1 + num2
+            elif operation == '-':
+                result = num1 - num2
+            elif operation == '*':
+                result = num1 * num2
+            elif operation == '/':
+                result = num1 / num2
+            else:
+                print("Invalid operation!")
+                continue
+            
+            print(f"Result: {result}")
+        except ValueError:
+            print("Invalid input! Please enter numbers.")
+        except ZeroDivisionError:
+            print("Cannot divide by zero!")
+        except KeyboardInterrupt:
+            print("\nCalculator closed.")
+            break
+```
+
+---
+
+## Summary: Days 5-7
+
+### What We Learned:
+
+**Day 5 - Functions:**
+- Function definition and syntax
+- Types of functions (built-in, user-defined, lambda, higher-order)
+- Function arguments (positional, keyword, default, *args, **kwargs)
+- Recursive functions and their applications
+
+**Day 6 - Lambda, Modules, and File Handling:**
+- Lambda functions for concise code
+- File operations (read, write, append)
+- Working with CSV and JSON files
+- File modes and best practices
+
+**Day 7 - Exception Handling and Debugging:**
+- Try-except-else-finally blocks
+- Handling specific exceptions
+- Raising custom exceptions
+- Debugging techniques and best practices
+
+### Key Takeaways:
+
+1. Functions make code reusable and organized
+2. Lambda functions are useful for short, simple operations
+3. Always use `with` statement for file handling
+4. Exception handling prevents program crashes
+5. Debugging is an essential skill for finding and fixing errors
 
 ---
